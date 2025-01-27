@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        header {
+            background-color: darkgrey;
+            text-align: center;
+            color: rgb(13, 14, 14);
+            font-size: 55px;
+        }
+        article {
+            background-image: url("https://img.freepik.com/free-photo/elegant-adult-woman-holding-shopping-bags-with-copy-space_23-2148624967.jpg?w=1380&t=st=1712829338~exp=1712829938~hmac=4c1703c60085ac55e382620d94e305d3fcd826004badf0f36d77b5db77607d18");
+            background-size: cover;
+            background-position: center;
+        }
+        div.bodydiv {
+            background-color: rgba(250, 235, 215, 0.852);
+            display: flex;
+            padding: 1%;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        div.homeElements {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(4, 4, 4, 0.385);
+            height: 60px;
+            width: 200px;
+        }
+        a {
+            text-decoration: none;
+        }
+        article {
+            float: left;
+            padding: 20px;
+            width: 100%;
+            color: rgb(8, 9, 9);
+        }
+        footer {
+            background-color: black;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+        img {
+            height: 40px;
+            width: 100px;
+        }
+        img.navele {
+            height: 60px;
+            width: 100px;
+        }
+        div.footdivcont {
+            display: flex;
+            padding: 1%;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .logoimg{
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logodiv" >
+            <img src="https://www.creativefabrica.com/wp-content/uploads/2022/01/09/Initial-MT-letter-Logo-Design-Template-Graphics-23203077-1-1-580x435.jpg" alt="" class="logoimg">
+           
+        </div> 
+        <div>  Meghana Textiles </div>
+        <a href="/login">
+          <img src="https://static.vecteezy.com/system/resources/previews/007/033/146/non_2x/profile-icon-login-head-icon-vector.jpg" alt="" style="border-radius: 25px;">
+        </a>  
+    </header>
+    <nav>
+        <h2>
+            <div class="bodydiv">
+                <div><img class="navele" src="https://media.tenor.com/1z0b7f_gnxMAAAAi/fashion-winter.gif" alt=""></div>
+                <div class="homeElements"><a href="/home" class="navlinks">Home</a></div>
+                <div class="homeElements"><a href="products" class="navlinks">Products</a></div>
+                <div class="homeElements"><a href="#" class="navlinks" onclick="redirectToBottom(event)">ContactUs</a></div>
+                <div class="homeElements"><a href="/aboutUS" class="navlinks">AboutUs</a></div>
+            </div>
+        </h2>
+    </nav>
+    <article>
+        <h1>Our Motive</h1>
+        <p>We maintain the textiles which are assured with quality and customer satisfaction and provide affordable prices for the customer compared to others in the market.</p>
+         <p>Our products motive is to Satisfy the customer.</p>
+    <p>we maintain the textails which are assured with quality and customer satisfaction and provide the affordable price for the customer compared to the others in the market</p>
+    <p>Our products motive is to Satisfy the customer.</p>
+    <p>we maintain the textails which are assured with quality and customer satisfaction and provide the affordable price for the customer compared to the others in the market</p>
+    <p>Our products motive is to Satisfy the customer.</p>
+    <p>we maintain the textails which are assured with quality and customer satisfaction and provide the affordable price for the customer compared to the others in the market</p>
+    <p>Our products motive is to Satisfy the customer.</p>
+    <p>we maintain the textails which are assured with quality and customer satisfaction and provide the affordable price for the customer compared to the others in the market</p>
+    <p>Our products motive is to Satisfy the customer.</p>
+    <p>we maintain the textails which are assured with quality and customer satisfaction and provide the affordable price for the customer compared to the others in the market</p>
+    <p>Our products motive is to Satisfy the customer.</p>
+    <p>we maintain the textails which are assured with quality and customer satisfaction and provide the affordable price for the customer compared to the others in the market</p> 
+    </article>
+    <footer>
+        <h1>Contact Us</h1>
+        <div class="footdivcont">
+            <div class="footdivelemet"><a href="#">Instagram</a></div>
+            <div class="footdivelemet"><a href="#">WhatsApp</a></div>
+            <div class="footdivelemet"><a href="#">Facebook</a></div>
+        </div>
+    </footer>
+
+    <script>
+        function redirectToBottom(event) {
+            event.preventDefault(); // Prevents default anchor behavior
+            // Get the height of the page
+            var pageHeight = document.body.scrollHeight || document.documentElement.scrollHeight;
+            // Scroll to the bottom of the page
+            window.scrollTo(0, pageHeight);
+        }
+    </script>
+</body>
+</html>

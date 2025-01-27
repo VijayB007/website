@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        body{
+           
+            background-image: url("https://i.pinimg.com/564x/02/f2/64/02f2649eaa7743a8e0a117c3e0a386ee.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+        }
+        form{
+             height: 50rex;
+            width: 30rex;
+            {{!-- border: 2px dashed; --}}
+            margin:0 auto;
+            display: flexbox;
+            justify-content: center;
+            {{!-- background-color: rgb(170, 177, 177); --}}
+           
+
+        }
+        div{
+            border-radius: 20px;
+           display: flexbox;
+           justify-content: space-around;
+            {{!-- background-color: aquamarine; --}}
+            height: 50%;
+            width: 50%;
+
+        }
+        .logoimg{
+            height: 50px;
+            width: 50px;
+            border-radius: 25px;
+        }
+        .loginform{
+            background-image: url('https://wallpaperwaifu.com/wp-content/uploads/2020/04/sword-art-online-alicization-thumb.jpg');
+            width: 40rex;
+            border: 3px solid;
+        }
+        
+    </style>
+</head>
+<body>
+ 
+        <h1>Meghana Textails</h1>
+        <center>
+        <div class="loginform">
+       <h1>login</h1>
+       <form action="/login" method="post">  
+       <img class="logoimg" src="https://www.creativefabrica.com/wp-content/uploads/2022/01/09/Initial-MT-letter-Logo-Design-Template-Graphics-23203077-1-1-580x435.jpg" alt=""> 
+       <p>{{data.errormessage}}</p> 
+        <!-- user input-->
+        Username:<br>
+        <input type="text" name="username" required><br><br>
+        Password:<br>
+        <input type="password" name="password"  required><br><br>
+        <!-- submit button -->
+        <input type="submit" value="login">
+        <p>not have acc register here? <a href="/register">register</a></p>
+      </form>
+      </div>
+      </center>
+
+      <script>
+         // Check if token is available in data object
+        {{#if data.jwt_token}}
+            // Store JWT token in localStorage
+            localStorage.setItem("token", "{{data.jwt_token}}");
+            // Redirect to dashboard or any other page if needed
+            window.location.href = '/dashboard'; 
+        {{/if}}
+      </script>
+</body>
+</html>
